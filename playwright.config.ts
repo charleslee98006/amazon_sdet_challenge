@@ -9,7 +9,6 @@ import { defineConfig, devices } from '@playwright/test';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 require('dotenv').config({path: 'prod.env'});
 console.log('APP ENVIRONMENT: ' + process.env.APP_ENV);
-console.log('Defaulting to local environment configurations');
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
