@@ -14,6 +14,8 @@ console.log('Defaulting to local environment configurations');
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  timeout: 30*1000,
+  expect: { timeout: 15* 1000 },
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -31,7 +33,12 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
+    /* Base URL to use in actions like `await page.goto('/')`. */
+    baseURL: process.env.BASE_URL,
+    video: 'retain-on-failure',
+    screenshot: 'only-on-failure',
+    viewport: { width: 1920, height: 1080 },
   },
 
   /* Configure projects for major browsers */
