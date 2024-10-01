@@ -63,7 +63,6 @@ Another function that can help quickly get started is to use the Playwright code
 Example:
 ```
     npx playwright codegen google.com
-
 ```
 
 ## Key Assumptions
