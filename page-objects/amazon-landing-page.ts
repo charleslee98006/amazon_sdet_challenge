@@ -15,5 +15,6 @@ export class LandingPage {
  */
   constructor(page: Page) {
     this.signInButton = page.getByRole('link', { name: 'Sign in', exact: true });
+    this.userNameText = page.locator('//*[@id="nav-link-accountList-nav-line-1"]')
   }
 }
