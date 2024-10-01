@@ -1,0 +1,30 @@
+{
+  "name": "amazon_sdet_challenge",
+  "version": "1.0.0",
+  "description": "amazon interview challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charleslee98006/amazon_sdet_challenge.git"
+  },
+  "keywords": [
+    "sdet",
+    "challenge"
+  ],
+  "author": "Charles Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charleslee98006/amazon_sdet_challenge/issues"
+  },
+  "homepage": "https://github.com/charleslee98006/amazon_sdet_challenge#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
